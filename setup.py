@@ -12,6 +12,7 @@ setup(
     description='Python toolkit for Cellular Automata',
     author="Tong Zhang",
     author_email="warriorlance@gmail.com",
+    url="https://github.com/archman/ca-toolkit.git",
     ext_modules=modules,
     packages=['ca_toolkit'],
     install_requires=['matplotlib', 'numpy'],
