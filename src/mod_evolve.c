@@ -32,7 +32,7 @@ evolve(PyObject *self, PyObject *args)
     npy_int32 *dptr1 = (npy_int32 *)PyArray_DATA(arr1);
     npy_int32 *dptro = (npy_int32 *)PyArray_DATA(oarr);
 
-    int *new_arr = update_pattern(dptr1, nsize, nrow, ncol);
+    int *new_arr = update_pattern_rule001(dptr1, nsize, nrow, ncol);
 
     for (int i = 0; i < nsize; i++)
         dptro[i] = new_arr[i];
